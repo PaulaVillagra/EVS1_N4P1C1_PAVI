@@ -15,7 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from pavi_secondApp import views as app2
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('texto/',app2.texto),
+    path('lista/',app2.listas),
 ]
